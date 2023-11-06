@@ -26,6 +26,11 @@ html
     color: white;
 }
 
+section
+{
+    overflow-x:hidden;
+}
+
 .terminal-container
 {
     margin-left: 5vh;

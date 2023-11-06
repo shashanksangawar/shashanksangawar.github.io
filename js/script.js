@@ -1,3 +1,4 @@
+// import { help, command_execution } from "./command";
 const outputElement = document.getElementById('output-container');
 const inputElement = document.getElementById('input');
 const inputContainer = document.getElementById('input-container');
@@ -21,7 +22,7 @@ inputElement.addEventListener('keydown', function(e) {
         const ScreenOutput = command_execution(userCommand);
         if (ScreenOutput==='')
         {
-            outputElement.innerHTML += `Unknown Command ${userCommand} please check commands using <span class="command-help">"help"</span>`;
+            outputElement.innerHTML += `<div class="unknown">Unknown Command ${userCommand} please check commands using <span class="command-help">"help"</span></div>`;
         }
         else if (ScreenOutput==='clear')
         {
@@ -51,14 +52,14 @@ inputElement.addEventListener('keydown', function(e) {
 const help = [
     '<br><br>',
     '<div class="help">',
-    '<p><b class="command-help">about</b>          A short intro about who I am and what I do.</p>',
-    '<p><b class="command-help">projects</b>       List of Coding Projects.</p>',
-    '<p><b class="command-help">socials</b>        Social Media Handles.</p>',
-    '<p><b class="command-help">secret</b>         A Secret surprise for you!!!</p>',
-    '<p><b class="command-help">contact</b>        Reach me out.</p>',
-    '<p><b class="command-help">info</b>           A brief intro about who I am and what I do.</p>',
-    '<p><b class="command-help">hire</b>           Hire Me as a Free-Lancer.</p>',
-    '<p><b class="command-help">clear</b>          Clears the terminal.</p>',
+    '<p><b class="command-help">about</b><br>          A short intro about who I am and what I do.</p>',
+    '<p><b class="command-help">projects</b><br>        List of Coding Projects.</p>',
+    '<p><b class="command-help">socials</b><br>         Social Media Handles.</p>',
+    '<p><b class="command-help">secret</b><br>          A Secret surprise for you!!!</p>',
+    '<p><b class="command-help">contact</b><br>         Reach me out.</p>',
+    '<p><b class="command-help">info</b><br>            A brief intro about who I am and what I do.</p>',
+    '<p><b class="command-help">hire</b><br>            Hire Me as a Free-Lancer.</p>',
+    '<p><b class="command-help">clear</b><br>           Clears the terminal.</p>',
     '</div>',
     '<br><br>'
 ]
@@ -92,7 +93,7 @@ const socials = [
     '<br><br>',
     '<div class="socials">',
     "<h3> Oops didn't get an alias use one of these after entering <span class='command-help'>'socials'</span> command. </h3>",
-    '<p><b class="command-help">[--g]</b>         Redirect to my Github account.</i></p>',
+    '<p><b class="command-help">[--g]</b>         Redirect to my Github account.</p>',
     '<p><b class="command-help">[--l]</b>         Redirect to my LinkedIn account.</p>',
     '<p><b class="command-help">[--y]</b>         Redirect to my Youtube account.</p>',
     "<h3> Example : socials --g </h3>",

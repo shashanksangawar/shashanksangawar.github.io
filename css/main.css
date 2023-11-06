@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Bone Structure */
 
 *
@@ -61,10 +62,50 @@ h2
 /* For Headers */
 .header
 {
+=======
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P",sans-serif;
+}
+
+
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+  
+html
+{
+    background: black;
+    color: white;
+}
+
+.terminal-container
+{
+    margin-left: 5vh;
+    font-size: 1.2vw;
+    width: 100vw;
+}
+
+.terminal-container #input-container
+{
+    display: flex;
+    align-items: baseline;
+
+}
+
+#loading-screen {
+>>>>>>> c918269 (Second Commit)
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
@@ -477,3 +518,222 @@ h2
     background: yellowgreen;
     z-index: 98;
 }
+=======
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#loading-screen p
+{
+    margin-left: -50vw;
+}
+
+#progress-bar-container {
+    width: 70%;
+    height: 60px;
+    border: dashed 2px #f0f0f0;
+    /* border-radius: 10px; */
+}
+
+#progress-bar {
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    animation: fill-progress 3s linear ; /* Adjust the duration as needed */
+}
+
+input
+{
+    /* margin-top: -10vh; */
+    /* height: 30px; */
+    padding-left: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+input.blinking
+{
+    animation: blink 1s infinite;
+}
+
+.name
+{
+    color: #4399ea;
+}
+
+.separator
+{
+    color: #fff800;
+}
+
+.code
+{
+    color: #2cc5df;
+}
+
+.route
+{
+    color: #ffba00;
+}
+
+.output-container p,
+.output-container img,
+.output-container h3,
+.output-container h5,
+.output-container b
+{
+    animation: typing 0.5s steps(30, end)
+}
+
+.input-container,
+.prompt,
+input
+{
+    animation: show 1.5s ease forwards;
+}
+
+.info-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20vh;
+    width: 50%;
+    margin-left: 23vw;
+}
+.about-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: -25vh;
+    margin-left: 23vw;
+}
+
+.ascii-container
+{
+   display: absolute;
+   padding-left: 20vh;
+}
+
+.ascii-art 
+{
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.3vw;
+}
+
+.command-help
+{
+    text-shadow: 0 0 5px #f0f0f0 
+}
+
+.socials,
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.socials p,
+.contact p
+{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+i
+{
+    font-size: 2vw;
+}
+
+.bxl-github
+{
+    margin-right: -23.2vw;
+}
+
+.bxl-linkedin-square
+{
+    margin-right: -25vw;
+}
+.bxl-youtube
+{
+    margin-right: -24.5vw;
+}
+
+@keyframes fill-progress {
+    0% 
+    {
+        width: 0%;
+    }
+    
+    25% 
+    {
+        width: 25%;
+    }
+
+    40% 
+    {
+        width: 40%;
+    }
+
+    75% 
+    {
+        width: 75%;
+    }
+
+    100% 
+    {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes typing 
+{
+    from 
+    {
+        width: 0;
+    }
+    to 
+    {
+        width: 100%;
+    }
+}
+
+/*  */
+
+/*  */
+
+/*  */
+>>>>>>> c918269 (Second Commit)

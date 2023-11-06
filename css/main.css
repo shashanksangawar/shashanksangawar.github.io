@@ -24,11 +24,7 @@ html
 {
     background: black;
     color: white;
-}
-
-section
-{
-    overflow-x:hidden;
+    overflow:hidden;
 }
 
 .terminal-container

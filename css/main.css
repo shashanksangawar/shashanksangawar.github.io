@@ -7,11 +7,19 @@
     font-family: "Press Start 2P",sans-serif;
 }
 
+.main
+{
+    width: 100dvw;
+    overflow: hidden;
+}
+
 .ascii-container .text
 {
     display: flex;
     margin-left: 15vw;
     padding-bottom: 50px;
+    width: 100vw;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar
@@ -24,14 +32,14 @@ html
 {
     background: black;
     color: white;
-    overflow:hidden;
 }
 
 .terminal-container
 {
     margin-left: 5vh;
     font-size: 1.2vw;
-    width: 100vw;
+    width: 90dvw;
+    overflow: hidden;
 }
 
 .terminal-container #input-container
@@ -162,6 +170,8 @@ input
 {
    display: absolute;
    padding-left: 20vh;
+   overflow: hidden;
+   width: 100dvw;
 }
 
 .ascii-art 
@@ -169,6 +179,8 @@ input
     font-family: monospace;
     white-space: pre;
     font-size: 1.3vw;
+    width: 100dvw;
+    overflow: hidden;
 }
 
 .command-help

@@ -89,8 +89,6 @@ html
 
 input
 {
-    /* margin-top: -10vh; */
-    /* height: 30px; */
     padding-left: 10px;
     border: none;
     background: none;
@@ -130,14 +128,6 @@ input.blinking
     color: #ffba00;
 }
 
-.output-container p,
-.output-container img,
-.output-container h3,
-.output-container h5,
-.output-container b
-{
-    animation: typing 0.5s steps(30, end)
-}
 
 .input-container,
 .prompt,
@@ -151,10 +141,11 @@ input
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -15vh;
+    margin-top: -25vh;
     width: 50%;
     margin-left: 23vw;
 }
+
 .about-text
 {
     display: flex;
@@ -162,8 +153,14 @@ input
     justify-content: center;
     flex-direction: column;
     width: 70%;
-    margin-top: -20vh;
+    margin-top: -30vh;
     margin-left: 23vw;
+}
+
+.about img,
+.info img
+{
+    width: 20dvw;
 }
 
 .ascii-container
@@ -272,23 +269,13 @@ i
     }
 }
 
-@keyframes typing 
-{
-    from 
-    {
-        width: 0;
-    }
-    to 
-    {
-        width: 100%;
-    }
-}
 
-/*  */
+
+/* Mobile */
 
 
 
-@media only screen and (width:1440px), (height:900px) 
+@media screen and (max-width: 400px)
 {
     #loading-screen 
     {
@@ -309,901 +296,95 @@ i
     }
     .ascii-container
     {
-        margin-left: 0vw;
+        overflow: visible;
+        margin-left: -35dvw;
+        width: 110dvw;
     }
 
+    .ascii-art
+    {
+        font-size: 7px;
+        width: 100dvw;
+    }
     .ascii-container .text
     {
         display: flex;
         margin-left: 15vw;
         padding-bottom: 50px;
+        font-size: 7px;
     }
     .ascii-container .text .command-help
     {
         padding: 0 4px;
     }
+    
+    .terminal-container
+    {
+        margin-left: 3dvh;
+        width: 100dvw;
+        font-size: 8px;
+    }
+
+    .input-container
+    {
+        overflow: hidden;
+    }
+    .name, .separator, .code, .route
+    {
+        font-size: 8px;
+    }
+
+    input,
+    #input
+    {
+        font-size: 8px;
+    }
+
+    .input-container .prompt
+    {
+        margin-left: 10px;
+    }
 
     .about,
     .info
     {
-        margin-top: 0vw;
+        margin-top: 5dvh;
+        margin-left: 0dvw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
     }
 
     .about img
     {
-        width: 25vw;
+        width: 55dvw;
     }
 
     .info img
     {
         /* padding-top: 10vh; */
-        width: 20vw;
+        width: 55dvw;
     }
     .about-text
     {
-        width: 56%;
-        margin-top: -30vh;
-        margin-left: 34vw;
+        width: 80%;
+        margin-top: 5dvh;
+        margin-left: 10vw;
         line-height: 1.5;
     }
     .info-text
     {
-        width: 65%;
-        margin-left: 26vw;
-        line-height: 1.5;
-        margin-top: -18vh;
-    }
-    
-    .socials,
-    .contact
-    {
         width: 80%;
-    }
-}
-
-@media only screen and (height:1280px) , (width:950px)
-{
-    #loading-screen 
-    {
-        margin-top: 0vh;
-        margin-left: 0vw;
-    }
-
-    #loading-screen p
-    {
-        margin-left: -40vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -40vw;
-
-    }
-    .ascii-container
-    {
-        margin-left: 0vw;
-    }
-
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    .about,
-    .info
-    {
-        margin-top: 0vw;
-    }
-
-    .about img
-    {
-        width: 25vw;
-    }
-
-    .about-text
-    {
-        width: 56%;
-        margin-top: -25vh;
-        margin-left: 34vw;
+        margin-top: 5dvh;
+        margin-left: 10vw;
         line-height: 1.5;
     }
-    .info-text
-    {
-        width: 65%;
-        margin-left: 26vw;
-        line-height: 1.5;
-        margin-top: -14vh;
-    }
-    .ascii-container
-    {
-        margin-left: 0vw;
-    }
-
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    .about,
-    .info
-    {
-        margin-top: 0vw;
-    }
-
-    .about img
-    {
-        width: 25vw;
-    }
-
-    .info img
-    {
-        /* padding-top: 10vh; */
-        width: 20vw;
-    }
-    
     
     .socials,
     .contact
     {
         width: 80%;
     }
-}
-
-@media only screen and (width:820px) , (height:1180px) 
-{
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: 0vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    .ascii-container
-    {
-        margin-left: -20vw;
-    }
-
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        /* font-size: 2vw; */
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    .about,
-    .info
-    {
-        margin-top: 0vw;
-    }
-
-    .about-text,
-    .info-text
-    {
-        width: 65%;
-        margin-top: -12vh;
-        margin-left: 26vw;
-        line-height: 1.5;
-    }
-    .info-text
-    {
-        margin-top: -8vh;
-    }
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-}
-
-@media only screen and (width:800px) , (height:1280px) 
-{
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: 0vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    .ascii-container
-    {
-        margin-left: -20vw;
-    }
-
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    .about,
-    .info
-    {
-        margin-top: 0vw;
-    }
-
-    .about-text,
-    .info-text
-    {
-        line-height: 1.5;
-        width: 57%;
-        margin-top: -12vh;
-        margin-left: 33vw;
-    }
-    .info-text
-    {
-        margin-top: -8vh;
-    }
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-}
-
-
-
-@media only screen and (width:428px) , (height:926px) 
-{
-    ::-webkit-scrollbar
-    {
-        width: 0;
-        height: 0;
-    }
-    .ascii-container
-    {
-        margin-left: -47vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,.info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -40vw;
-        margin-top: 0vw;
-    }
-
-    .about-text,.info-text
-    {
-        margin-top: 3vh;
-        width: 60%;
-    }
-  
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
-}
-
-
-
-
-@media only screen and (width:414px) , (height:896px) 
-{
-    ::-webkit-scrollbar
-    {
-        width: 0;
-        height: 0;
-    }
-    .ascii-container
-    {
-        margin-left: -47vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,.info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -40vw;
-        margin-top: 0vw;
-    }
-
-    /* .info-text
-    {
-        margin-left: 5vw;
-    } */
-
-    .about-text,.info-text
-    {
-        margin-top: 3vh;
-        width: 60%;
-    }
-  
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
-}
-
-@media only screen and (height:410px) , (width:732px) 
-{
-    .ascii-container
-    {
-        margin-left: -45vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,.info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -36vw;
-        margin-top: 0vw;
-    }
-
-    .info-text
-    {
-        margin-left: 5vw;
-    }
-
-    .about-text,.info-text
-    {
-        margin-top: 3vh;
-    }
-  
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
-}
-
-
-@media only screen and (height:390px) , (max-height:400px), (width:844px) , (max-width:851px)
-{
-    .ascii-container
-    {
-        margin-left: -45vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,.info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -36vw;
-        margin-top: 0vw;
-    }
-
-    .info-text
-    {
-        margin-left: 5vw;
-    }
-
-    .about-text,.info-text
-    {
-        margin-top: 3vh;
-    }
-  
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
-}
-
-
-@media only screen and (width:384px) , (height:640px) 
-{
-    ::-webkit-scrollbar
-    {
-        width: 0;
-        height: 0;
-    }
-    .ascii-container
-    {
-        margin-left: -42vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,.info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -36vw;
-        margin-top: 0vw;
-    }
-
-    .info-text
-    {
-        margin-left: 5vw;
-    }
-
-    .about-text,.info-text
-    {
-        margin-top: 3vh;
-    }
-  
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
-}
-
-@media only screen and (height:375px) , (width:812px) 
-{
-    .ascii-container
-    {
-        margin-left: -50vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,
-    .info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -36vw;
-        margin-top: 0vw;
-    }
-
-    .info-text
-    {
-        margin-top: 3vh;
-        margin-left: 5vw;
-    }
-
-    .about-text
-    {
-        margin-top: 3vh;
-        width: 60%;
-    }
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
-}
-
-@media only screen and (width:375px) , (height:667px) 
-{
-    ::-webkit-scrollbar
-    {
-        width: 0;
-        height: 0;
-    }
-    .ascii-container
-    {
-        margin-left: -42vw;
-    }
-    .ascii-container .text
-    {
-        display: flex;
-        margin-left: 15vw;
-        font-size: 2vw;
-        padding-bottom: 50px;
-    }
-    .ascii-container .text .command-help
-    {
-        padding: 0 4px;
-    }
-
-    
-    .ascii-art
-    {
-        font-size: 2vw;
-    }
-    .terminal-container
-    {
-        font-size: 2vw;
-    }
-
-    #loading-screen 
-    {
-        margin-top: -50vh;
-        margin-left: -25vw;
-    }
-
-    #progress-bar-container
-    {
-        width: 40%;
-        margin-left: -35vw;
-
-    }
-    input
-    {
-        font-size: 2vw;
-    }
-    .about,.info
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: -36vw;
-        margin-top: 0vw;
-    }
-
-    .info-text
-    {
-        margin-left: 5vw;
-    }
-
-    .about-text,.info-text
-    {
-        margin-top: 3vh;
-    }
-  
-
-    .help p b 
-    {
-        padding: 3px 10px;
-    }
-    .projects
-    {
-        width: 70%;
-    }
-
-    .socials,
-    .contact
-    {
-        width: 80%;
-    }
-    .socials .command-help,
-    .contact .command-help
-    {
-        padding-right: 30px;
-    }
-
 }
